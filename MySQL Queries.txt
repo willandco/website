@@ -1,0 +1,26 @@
+Common Queries
+http://www.artfulsoftware.com/infotree/queries.php
+
+Alter Table; Add Foreign Key
+
+Adds a foreign key on FOREIGN KEY which allows indexing on the REFERENCE table matching column. key_id must be unique
+
+Generic:
+ALTER TABLE table
+   ADD FOREIGN KEY tableFK ( key_id )
+   REFERENCES reftable ( ref_col );
+
+Example:
+ALTER TABLE topics
+   ADD FOREIGN KEY TopicFK ( id )
+   REFERENCES msgs ( msg_topic );
+   
+Return Foreign Key Match
+
+Returns all the associated foreign matches
+
+Generic:
+SELECT * FROM `db`.`reftable` WHERE `refcol` = `keytable`.`keycol`
+
+Example:
+SELECT * FROM `sql_testing`.`msgs` WHERE `msg_topic` = 1 

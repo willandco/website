@@ -1,0 +1,41 @@
+<html>
+	<head>
+	<script type='text/javascript' src='https://localhost/website/js/jquery.min.js'></script>
+		<script type='text/javascript'>
+		$(document).ready(function() {
+			
+			$(document).bind('keyup', function(event){ToggleMessage( event )});
+			$('#display').bind('click', function(event) {ToggleMessage( event )});
+			
+			
+		});
+		
+		function ToggleMessage ( event ) {
+			
+			// Tilda (`) key event code
+			toggle_key = 192;
+			if(!event.keyCode || (event.keyCode == toggle_key && event.target.tagName != 'TEXTAREA')){
+				$('.space').css('display', (($('.space').css('display') == 'none') ? 'block':'none') );
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<div id='msgbox' style='position:absolute;
+		float:right;
+		right:0px;
+		bottom:0px;
+		z-index:1;
+		width:100%;
+		height:200px;
+		background-color:black;
+		display:none;'>
+			<textarea id='#test' style='width:100%;height:100%;'></textarea>
+		</div>
+		<img id='display' src='https://localhost/website/img/plus.png' style='position:absolute;
+		float:right;
+		right:0px;
+		bottom:0px;
+		z-index:1;"'/>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+@CHARSET "ISO-8859-1";
+/* Color Modifications */
+body		{background-color:#ffffb3;}
+
+/* div properties */
+
+div.page		{overflow: auto;}
+div.space	{-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin-right:220px;}
+div.empty	{margin:0px; 
+			padding:0px;}
+.warning	{margin:0px; 
+			padding:0px;
+			font-size:12px;
+			font-weight:bold;
+			color:#3D0E00;}
+div.menuheader
+			{font-weight:bold;
+			font-size:14px;
+			background-color:#ffb580;
+			text-align:center;}
+			
+div.fixed	{-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			position:fixed;
+			float:right;
+			right:0px;
+			bottom:0px;
+			z-index:1;
+			display:none;
+			outline:black solid 1px;
+			padding-left:14px;
+			background-color:#ffffb3;
+			width:100%;
+			padding-right:250px;}
+
+table		{width:100%;}
+th			{background-color:#FFCC66;
+			color:#993399;
+			font-size:14px;
+			font-weight:bold;}
+/* Generic header */
+th.menu 		{font-weight:bold;
+			font-size:14px;
+			background-color:#ffb580;}
+
+/* Board column width properties */			
+th.name 		{width:200px;}
+th.msgno		{width:60px;}
+th.date		{width:180px;}
+
+/* Show Messages column properties */
+th.msgh		{font-size:12px; 
+			text-align:left; 
+			vertical-align:text-top;
+			text-decoration:none;}
+			
+td			{background-color:#fff588;
+			color:#003366;
+			font-size:12px;}
+			
+/* Standard message body */
+td.msg		{padding:3px;
+			text-align:left; 
+			vertical-align:text-top;
+			text-decoration:none;}
+			
+/* Used in profile to wrap around Account Created */
+td.wrap 		{white-space:nowrap;
+			width:1px;
+			padding-right:4px;}
+			
+/* For no avatar */			
+td.avatar	{width:150px;height:60px;}
+
+td.rowhead	{font-weight: bold;}
+
+/* Link colors */
+a			{text-decoration:underline;}			
+a:link 		{color:#003366;}
+a:visited	{color:#004d99;}
+
+/* Header style */
+h1,h2,h3,h4,h5,h6		
+			{color:#003366;}
+h1			{font-size:40px;}
+h1,h2,h3		{text-align:center;
+			 margin:0px;
+			 font-style:italic;}
+
+/* textbox might not actually be used */			
+textbox		{color:#ffffb3;}
+p			{font-size:12px;}
+
+textarea 		{width:100%; 
+			height:200px; 
+			resize:none;}
+
+textarea.sig 	{width: 500px;
+			height: 38px;
+			margin-bottom: 8px;
+			}
+			
+pre			{margin: 0px; 
+			padding: 0px;
+			text-align: left; 
+			vertical-align:text-top;
+			text-decoration:none;
+			white-space: pre-wrap; /* css-3 */
+			white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+			white-space: -pre-wrap; /* Opera 4-6 */
+			white-space: -o-pre-wrap; /* Opera 7 */
+			word-wrap: break-word; /* Internet Explorer 5.5+ */
+			}
+			
+/* Font Modifications */
+h1, h2, h3, h4, h5, h6, p, a, td, th, div, pre
+			{font-family:"Arial", Gadget, sans-serif; margin:0px;}
+		
+/* could not find these in use; kept in case */
+#id		{width:120px;}
+#title	{width:100%;}
+
+/* expand messagebox */
+img.plus {position:fixed;
+		float:right;
+		right:0px;
+		bottom:0px;
+		z-index:1;
+		display:none;}
+		
+img		{max-height:800px;
+		max-width:1200px;
+		}
+		
+img.profile
+		{max-height:120px;
+		max-width:160px;
+		}
+
+a.like
+		{
+		display:none;
+		}
+		
+input.c_pass
+		{margin:2px;
+		width:230px;
+		}
+		
+
